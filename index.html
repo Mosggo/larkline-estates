@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Larkline Estates is an independent Bad Ragaz estate agency. Sell your home or find your next one with a local agent by your side." data-i18n-content="meta/home">
+  <title data-i18n="home-title">Larkline Estates | Local estate agents in Bad Ragaz</title>
+  <link rel="icon" href="assets/larkline-favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="language.js" defer></script>
+  <script src="prototype.js" defer></script>
+  <script src="town-map.js" defer></script>
+</head>
+<body>
+  <a class="skip-link btn-solid" href="#main" data-i18n="skip">Skip to content</a>
+  <main id="main" class="page-cover bg-light-1" data-curtain-cover tabindex="-1">
+    <section class="home-hero bg-dark-1 body-on-dark boxed-l" aria-labelledby="home-title">
+      <video class="hero-video" src="assets/hero-video.mp4" muted loop playsinline preload="metadata" aria-hidden="true" data-hero-video></video>
+      <a class="brand hero-brand" href="index.html" aria-label="Larkline Estates home" data-i18n-aria-label="home-label" aria-current="page">
+        <img src="assets/larkline-logo-light.svg" width="930" height="213" alt="Larkline Estates">
+      </a>
+      <div class="hero-copy flex-column flex-align-start">
+        <p class="sub-title detail-on-dark eyebrow" data-i18n="hero-eyebrow">Independent estate agents in Bad Ragaz</p>
+        <h1 id="home-title" class="title-1 heading-on-dark"><span data-i18n="hero-title-first">Your home.</span> <br><span data-i18n="hero-title-second">Our home ground.</span></h1>
+        <p class="body-l" data-i18n="hero-intro">Sell your home with a local agent who knows your street and stays with you from the first coffee to closing.</p>
+        <a class="btn-solid-on-dark" href="#valuation" data-i18n="valuation">Request a valuation</a>
+      </div>
+    </section>
+
+  <header class="site-header home-nav flex-row flex-align-center flex-justify-between" data-home-nav>
+    <a class="brand nav-brand" href="index.html" aria-label="Larkline Estates home" data-i18n-aria-label="home-label">
+      <img src="assets/larkline-logo.svg" width="930" height="213" alt="Larkline Estates">
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria-label="nav-label">
+      <a href="#properties" data-i18n="properties">Properties</a>
+      <a href="about.html" data-i18n="about">About us</a>
+      <a href="bad-ragaz.html">Bad Ragaz</a>
+    </nav>
+    <div class="desktop-actions flex-row flex-align-center gap-12">
+      <a class="btn-outline" href="#valuation" data-i18n="valuation">Request a valuation</a>
+      <label class="language-picker" hidden>
+        <span class="visually-hidden" data-i18n="language">Language</span>
+        <select data-language-select>
+          <option value="en" lang="en">English</option>
+          <option value="de" lang="de">Deutsch</option>
+          <option value="nl" lang="en" aria-label="What Rino speaks (Dutch)">What Rino speaks</option>
+        </select>
+      </label>
+    </div>
+    <details class="mobile-menu" data-menu>
+      <summary><span class="visually-hidden" data-i18n="menu">Menu</span><span class="mobile-menu-icon" aria-hidden="true"></span></summary>
+      <nav class="mobile-nav flex-column gap-8" aria-label="Main navigation" data-i18n-aria-label="nav-label">
+        <a href="#properties" data-i18n="properties">Properties</a>
+        <a href="about.html" data-i18n="about">About us</a>
+        <a href="bad-ragaz.html">Bad Ragaz</a>
+        <a class="btn-solid" href="#valuation" data-i18n="valuation">Request a valuation</a>
+        <label class="language-picker" hidden>
+          <span class="visually-hidden" data-i18n="language">Language</span>
+          <select data-language-select>
+            <option value="en" lang="en">English</option>
+            <option value="de" lang="de">Deutsch</option>
+            <option value="nl" lang="en" aria-label="What Rino speaks (Dutch)">What Rino speaks</option>
+          </select>
+        </label>
+      </nav>
+    </details>
+  </header>
+
+    <section id="about" data-scroll-reveal class="about-section bg-light-1 boxed-m pad-tb-96 flex-column gap-24" aria-labelledby="about-title">
+      <div class="about-grid">
+        <figure class="office-photo">
+          <img class="rounded-s" src="assets/larkline-office.webp" width="1400" height="788" alt="People working together around a table in the supplied office photo" data-i18n-alt="office-alt" loading="lazy">
+        </figure>
+        <div class="section-copy flex-column flex-align-start gap-16">
+          <p class="sub-title subtitle-on-light eyebrow" data-i18n="about-eyebrow">Selling with Larkline</p>
+          <h2 id="about-title" class="title-2 heading-on-light" data-i18n="about-title">One agent, from start to sold.</h2>
+          <p data-i18n="about-start">Claire Morgan founded Larkline in 2017. Today, our small team works across Bad Ragaz, with each agent focused on the streets they know best.</p>
+          <p data-i18n="about-service">We take on fewer clients so the agent who values your home is the same person who handles viewings, answers your questions and sees the sale through.</p>
+          <a class="text-link link-on-light" href="about.html" data-i18n="meet-team-link">Meet Claire and the team</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="selling" data-scroll-reveal class="selling-section bg-light-2 boxed-m pad-tb-80 flex-column gap-32" aria-labelledby="selling-title">
+      <div class="section-heading flex-row flex-wrap flex-align-end flex-justify-between gap-16">
+        <h2 id="selling-title" class="title-2 heading-on-light" data-i18n="selling-title">From valuation to handover</h2>
+        <p data-i18n="selling-intro">One point of contact at every stage of the sale.</p>
+      </div>
+      <ol class="selling-steps gap-24">
+        <li class="flex-column gap-12">
+          <h3 class="title-5 heading-on-light" data-i18n="selling-price">Understand your price</h3>
+          <p data-i18n="selling-price-copy">Show us your home and tell us what matters for your move. Your agent explains what affects its value and where to start.</p>
+        </li>
+        <li class="flex-column gap-12">
+          <h3 class="title-5 heading-on-light" data-i18n="selling-buyer">Find the right buyer</h3>
+          <p data-i18n="selling-buyer-copy">Your agent handles viewings and answers buyers’ questions about the home and the neighbourhood.</p>
+        </li>
+        <li class="flex-column gap-12">
+          <h3 class="title-5 heading-on-light" data-i18n="selling-steps">Work through the sale</h3>
+          <p data-i18n="selling-steps-copy">Talk through offers and next steps with the agent who knows your home, all the way to closing.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="properties" data-scroll-reveal class="bg-light-2 boxed-l pad-tb-80 flex-column gap-32" aria-labelledby="properties-title">
+      <div class="section-heading flex-row flex-wrap flex-align-end flex-justify-between gap-16">
+        <div class="flex-column gap-8">
+          <p class="sub-title subtitle-on-light eyebrow" data-i18n="buying">Buying in Bad Ragaz</p>
+          <h2 id="properties-title" class="title-2 heading-on-light" data-i18n="listings">Homes for sale</h2>
+        </div>
+        <p data-i18n="listing-intro">Explore three homes and get in touch with the agent who knows each one.</p>
+      </div>
+      <div class="listing-grid gap-24">
+        <article class="listing-card listing-featured">
+          <a class="listing-link flex-column" href="property.html?listing=village-loft">
+            <div class="listing-image">
+              <img src="assets/village-living.webp" width="1600" height="1067" alt="Illustrative living room with warm timber and daylight" data-i18n-alt="loft-alt" loading="lazy">
+            </div>
+            <div class="listing-copy pad-20 flex-column gap-8">
+              <p class="body-s">Dorfkern · Loft</p>
+              <h3 class="title-3">Village Loft</h3>
+              <p class="body-s" data-i18n="loft-facts">3 beds · 2 baths · 195 m²</p>
+              <p class="listing-price">CHF 1’950’000</p>
+            </div>
+          </a>
+        </article>
+        <article class="listing-card">
+          <a class="listing-link flex-column" href="property.html?listing=tamina-classic">
+            <div class="listing-image">
+              <img src="assets/tamina.webp" width="1500" height="1000" alt="Illustrative apartment living room with soft neutral finishes" data-i18n-alt="tamina-alt" loading="lazy">
+            </div>
+            <div class="listing-copy pad-20 flex-column gap-8">
+              <p class="body-s detail-on-light" data-i18n="tamina-meta">Kurgebiet · Apartment</p>
+              <h3 class="title-5 heading-on-light">Tamina Classic</h3>
+              <p class="body-s detail-on-light" data-i18n="tamina-facts">3 beds · 2 baths · 172 m²</p>
+              <p class="listing-price">CHF 1’750’000</p>
+            </div>
+          </a>
+        </article>
+        <article class="listing-card">
+          <a class="listing-link flex-column" href="property.html?listing=flaescherstrasse-townhouse">
+            <div class="listing-image">
+              <img src="assets/townhouse.webp" width="1500" height="1000" alt="Illustrative townhouse with a cream façade and slate roof" data-i18n-alt="townhouse-alt" loading="lazy">
+            </div>
+            <div class="listing-copy pad-20 flex-column gap-8">
+              <p class="body-s detail-on-light" data-i18n="townhouse-meta">Fläscherstrasse · Townhouse</p>
+              <h3 class="title-5 heading-on-light" data-i18n="townhouse-title">Fläscherstrasse Townhouse</h3>
+              <p class="body-s detail-on-light" data-i18n="townhouse-facts">4 beds · 4 baths · 297 m²</p>
+              <p class="listing-price">CHF 3’250’000</p>
+            </div>
+          </a>
+        </article>
+      </div>
+      <p class="body-s detail-on-light" data-i18n="photo-note">Property photos are illustrative.</p>
+    </section>
+
+    <section id="bad-ragaz" data-scroll-reveal data-neighborhood-section class="neighborhood-section bg-light-1 boxed-l pad-tb-96" aria-labelledby="neighborhood-title">
+      <div class="town-map" data-town-map hidden>
+        <canvas class="town-map-canvas" data-map-canvas aria-hidden="true"></canvas>
+      </div>
+      <button type="button" class="town-map-surface" data-map-surface aria-label="Play move-in on the illustrated map" hidden></button>
+      <div class="neighborhood-grid">
+        <div class="neighborhood-copy flex-column flex-align-start gap-24">
+          <div class="section-copy flex-column flex-align-start gap-16">
+            <p class="sub-title subtitle-on-light eyebrow" data-i18n="around">Around Bad Ragaz</p>
+            <h2 id="neighborhood-title" class="title-2 heading-on-light" data-i18n="around-title">Find the part of town that feels like you.</h2>
+            <p data-i18n="around-copy">Picture a loft near Kronenplatz in Dorfkern, an apartment in the spa quarter, or a townhouse on Fläscherstrasse. Tell us what you want within walking distance and we’ll help you narrow down where to look.</p>
+            <a class="text-link link-on-light" href="bad-ragaz.html" data-i18n="town-guide-link">Read the Bad Ragaz guide</a>
+          </div>
+          <div class="town-map-ui flex-row flex-align-center gap-12" data-map-ui hidden>
+            <div class="town-map-caption flex-column gap-4">
+              <p class="body-s map-caption-label" data-i18n="map-caption">Bad Ragaz · Illustrated map</p>
+              <p class="body-s" role="status" data-map-status hidden>Choose a roof to see move-in day.</p>
+            </div>
+            <button type="button" class="map-action" data-map-pause aria-label="Pause map" hidden></button>
+          </div>
+        </div>
+        <figure class="neighborhood-photo flex-column gap-8">
+          <img class="rounded-m" src="assets/kronenplatz.webp" width="1500" height="1000" alt="Historic buildings and storefronts at Kronenplatz in the centre of Bad Ragaz" data-i18n-alt="town-alt" loading="lazy">
+          <figcaption class="body-s detail-on-light">Kronenplatz, Dorfkern</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="team" data-scroll-reveal class="bg-light-2 boxed-m pad-tb-80 flex-column gap-32" aria-labelledby="team-title">
+      <div class="section-copy flex-column gap-12">
+        <h2 id="team-title" class="title-2 heading-on-light" data-i18n="team-title">Meet your local agents</h2>
+        <p data-i18n="team-intro">Claire Morgan leads Larkline. Our four agents focus on different parts of Bad Ragaz, so you can speak with someone who knows your street.</p>
+      </div>
+      <ul class="local-agents gap-16">
+        <li class="card agent-profile"><img src="assets/agent-daniel.webp" alt="" width="560" height="640" loading="lazy"><div class="pad-16 flex-column gap-8"><h3 class="title-5 heading-on-light">Daniel Reyes</h3><p class="body-s" data-i18n="daniel-area">Dorfkern, Kirchgasse and Bahnhof</p></div></li>
+        <li class="card agent-profile"><img src="assets/agent-priya.webp" alt="" width="560" height="640" loading="lazy"><div class="pad-16 flex-column gap-8"><h3 class="title-5 heading-on-light">Priya Nair</h3><p class="body-s" data-i18n="priya-area">Kurgebiet, Blumenrain-Sand and Freudenberg</p></div></li>
+        <li class="card agent-profile"><img src="assets/agent-marcus.webp" alt="" width="560" height="640" loading="lazy"><div class="pad-16 flex-column gap-8"><h3 class="title-5 heading-on-light">Marcus Bell</h3><p class="body-s" data-i18n="marcus-area">Pizolstrasse, Unterrain and Weilig</p></div></li>
+        <li class="card agent-profile"><img src="assets/agent-sofia.webp" alt="" width="560" height="640" loading="lazy"><div class="pad-16 flex-column gap-8"><h3 class="title-5 heading-on-light">Sofia Lindqvist</h3><p class="body-s" data-i18n="sofia-area">Fläscherstrasse, Grossfeld and St. Leonhard</p></div></li>
+      </ul>
+      <p class="body-s detail-on-light" data-i18n="portrait-note">Illustrative portraits for this prototype.</p>
+    </section>
+
+    <section id="selling-questions" data-scroll-reveal class="bg-light-1 boxed-m pad-tb-80 flex-column gap-24" aria-labelledby="questions-title">
+      <div class="questions-grid gap-32">
+        <h2 id="questions-title" class="title-2 heading-on-light" data-i18n="faq-title">Before you decide to sell</h2>
+        <div class="questions-list">
+          <details>
+            <summary data-i18n="faq-value-q">What should I share when I ask for a valuation?</summary>
+            <p data-i18n="faq-value-a">Your street or neighbourhood and the type of home are enough to start. An agent can ask for more detail when you speak.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq-agent-q">Will I work with the same agent throughout?</summary>
+            <p data-i18n="faq-agent-a">Yes. The agent who first speaks with you stays with you through viewings, questions and closing.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq-rent-q">Does Larkline also handle rentals?</summary>
+            <p data-i18n="faq-rent-a">We focus on buying and selling homes in Bad Ragaz.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="commission" class="bg-light-2 boxed-m pad-tb-80" aria-labelledby="commission-title" data-commission hidden>
+      <div class="commission-layout gap-40">
+        <div class="flex-column gap-32">
+          <div class="section-copy flex-column gap-12">
+            <p class="sub-title subtitle-on-light eyebrow" data-i18n="commission-eyebrow">Commission calculator</p>
+            <h2 id="commission-title" class="title-2 heading-on-light" data-i18n="commission-title">What would it cost to sell your home?</h2>
+            <p data-i18n="commission-intro">Compare Larkline’s commission with a rate of your choice.</p>
+          </div>
+          <div class="commission-controls flex-column gap-24">
+            <div class="commission-control flex-column gap-8">
+              <label id="commission-price-label" for="commission-price" data-i18n="commission-price">Expected sale price</label>
+              <div class="commission-adjust gap-16">
+                <div class="flex-column gap-4">
+                  <input class="commission-slider" type="range" min="0" max="10000000" step="1" value="1200000" aria-labelledby="commission-price-label">
+                  <div class="commission-limits body-s detail-on-light" aria-hidden="true"><span>0</span><span>10’000’000</span></div>
+                </div>
+                <div class="commission-entry">
+                  <input id="commission-price" type="number" inputmode="numeric" min="0" max="10000000" step="1" value="1200000" aria-describedby="commission-chf" required>
+                  <span id="commission-chf" class="body-s detail-on-light">CHF</span>
+                </div>
+              </div>
+            </div>
+            <div class="commission-control flex-column gap-8">
+              <label id="commission-rate-label" for="commission-rate" data-i18n="commission-rate">Comparison rate</label>
+              <div class="commission-adjust gap-16">
+                <div class="flex-column gap-4">
+                  <input class="commission-slider" type="range" min="0" max="10" step="0.01" value="3" aria-labelledby="commission-rate-label">
+                  <div class="commission-limits body-s detail-on-light" aria-hidden="true"><span>0 %</span><span>10 %</span></div>
+                </div>
+                <div class="commission-entry">
+                  <input id="commission-rate" type="number" inputmode="decimal" min="0" max="10" step="0.01" value="3" aria-describedby="commission-percent" required>
+                  <span id="commission-percent" class="body-s detail-on-light">%</span>
+                </div>
+              </div>
+            </div>
+            <p id="commission-hint" class="commission-hint body-s" data-commission-hint data-i18n="commission-hint" hidden>Enter a whole-franc amount up to CHF 10’000’000 and a rate from 0% to 10% with up to two decimal places.</p>
+          </div>
+        </div>
+        <div class="commission-card bg-dark-1 body-on-dark rounded-l pad-32 flex-column flex-align-start gap-24">
+          <dl class="commission-results flex-column gap-16" aria-live="polite" aria-atomic="true">
+            <div>
+              <dt class="body-s detail-on-dark" data-i18n="commission-other">Commission at your comparison rate</dt>
+              <dd class="title-4 use-heading-font heading-on-dark" data-commission-other>CHF 36’000</dd>
+            </div>
+            <div>
+              <dt class="body-s detail-on-dark" data-i18n="commission-larkline">Larkline commission</dt>
+              <dd class="title-4 use-heading-font heading-on-dark" data-commission-larkline>CHF 14’400</dd>
+            </div>
+            <div class="commission-difference">
+              <dt class="body-s detail-on-dark" data-commission-difference-label>Estimated savings with Larkline</dt>
+              <dd class="title-2 use-heading-font" data-commission-difference>CHF 21’600</dd>
+            </div>
+          </dl>
+          <a class="btn-solid-on-dark" href="#valuation" data-i18n="valuation">Request a valuation</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="valuation" data-scroll-reveal class="bg-dark-1 body-on-dark boxed-m pad-tb-128 flex-column gap-24" aria-labelledby="valuation-title">
+      <div class="valuation-grid">
+        <div class="section-copy flex-column flex-align-start gap-16">
+          <p class="sub-title subtitle-on-dark eyebrow" data-i18n="valuation-eyebrow">A first step for homeowners</p>
+          <h2 id="valuation-title" class="title-2 heading-on-dark" data-i18n="valuation-title">What could your home sell for?</h2>
+          <p class="body-l" data-i18n="valuation-intro">Tell us a little about your property. A local agent can talk you through what affects its value and what selling could look like for you.</p>
+        </div>
+        <form class="valuation-form flex-column flex-align-start gap-20" data-valuation aria-describedby="valuation-note">
+          <div class="form-grid gap-16">
+            <label><span data-i18n="full-name">Full name</span><input required autocomplete="name"></label>
+            <label><span data-i18n="email">Email address</span><input type="email" required autocomplete="email"></label>
+            <label><span data-i18n="street">Street or neighbourhood</span><input required></label>
+            <label><span id="valuation-type-label" data-i18n="type">Property type</span>
+              <select required aria-labelledby="valuation-type-label">
+                <option value="" data-i18n="select-type">Select a type</option>
+                <option value="apartment" data-i18n="apartment">Apartment</option>
+                <option value="house" data-i18n="house">House</option>
+                <option value="loft">Loft</option>
+                <option value="townhouse" data-i18n="townhouse">Townhouse</option>
+                <option value="other" data-i18n="other">Other</option>
+              </select>
+            </label>
+          </div>
+          <button class="btn-solid-on-dark" type="submit" disabled data-i18n="valuation">Request a valuation</button>
+          <p id="valuation-note" class="body-s detail-on-dark" data-i18n="valuation-note">Prototype form. Use sample details to try it.</p>
+          <p class="form-status body-m" role="status" tabindex="-1" hidden data-i18n="valuation-success">Request preview complete. Your details stayed on this page.</p>
+          <noscript><p class="body-s" data-i18n="enable-js">Enable JavaScript to preview the request.</p></noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer bg-light-2 boxed-l" data-curtain-footer>
+    <div class="footer-inner flex-column gap-32" data-footer-inner>
+    <div class="footer-main gap-24">
+      <div class="footer-identity flex-column flex-align-start gap-20">
+        <a class="brand" href="index.html" aria-label="Larkline Estates home" data-i18n-aria-label="home-label"><img src="assets/larkline-logo.svg" width="930" height="213" alt="Larkline Estates"></a>
+        <address class="body-s flex-column gap-4">
+          <div>Pfäferserstrasse, Dorfkern<br><span data-i18n="address">7310 Bad Ragaz, Switzerland</span></div>
+          <a class="text-link link-on-light" href="mailto:hello@larkline.example">hello@larkline.example</a>
+          <span>+41 81 555 01 00</span>
+        </address>
+      </div>
+      <nav class="body-s flex-column flex-align-start gap-8" aria-label="Footer navigation" data-i18n-aria-label="footer-nav">
+        <p class="footer-label" data-i18n="footer-pages">Explore</p>
+        <a class="text-link link-on-light" href="index.html#properties" data-i18n="properties">Properties</a>
+        <a class="text-link link-on-light" href="about.html" data-i18n="about">About us</a>
+        <a class="text-link link-on-light" href="bad-ragaz.html">Bad Ragaz</a>
+      </nav>
+      <div class="body-s detail-on-light flex-column flex-align-start gap-8">
+        <p class="footer-label" data-i18n="footer-legal">Legal</p>
+        <span data-i18n="privacy">Privacy policy</span>
+        <span data-i18n="imprint">Legal notice</span>
+      </div>
+    </div>
+    <div class="footer-bottom flex-row flex-wrap flex-align-start flex-justify-between gap-12 body-s detail-on-light">
+      <p data-i18n="footer-note">Larkline Estates · Prototype with fictional listings and contact details</p>
+      <details class="credits">
+        <summary data-i18n="credits">Photo credits</summary>
+        <ul>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Bad_Ragaz_-_Fl%C3%A4scherstrasse.jpg">Fläscherstrasse</a>, <a href="https://commons.wikimedia.org/wiki/File:Bad_Ragaz_-_Kronenplatz.jpg">Kronenplatz</a> · Kecko · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <span data-i18n="credits-crop">Cropped for display.</span></li>
+          <li><span data-i18n="credits-listings">Illustrative property photos</span> · <a href="https://unsplash.com/photos/HiIo-viWU40">Clay Banks</a>, <a href="https://unsplash.com/photos/wcS0Bsky5yU">Max Harlynking</a> · <a href="https://unsplash.com/license" data-i18n="license-unsplash">Unsplash License</a> · <a href="https://www.pexels.com/photo/17264331/">Jan van der Wolf</a> · <a href="https://www.pexels.com/license/" data-i18n="license-pexels">Pexels License</a>.</li>
+          <li><span data-i18n="portraits">Illustrative portraits</span> · <a href="https://www.pexels.com/photo/6273841/">Alexander Grey</a>, <a href="https://www.pexels.com/photo/38139796/">Jonathan Borba</a>, <a href="https://www.pexels.com/photo/31647494/">Boko Shots</a>, <a href="https://www.pexels.com/photo/12946488/">Vinícius Caricatte</a> · <a href="https://www.pexels.com/license/" data-i18n="license-pexels">Pexels License</a></li>
+        </ul>
+      </details>
+    </div>
+    <p class="footer-copyright body-s detail-on-light">© Mosko. Digital on Point.</p>
+    </div>
+  </footer>
+</body>
+</html>

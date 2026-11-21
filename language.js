@@ -1,0 +1,448 @@
+const siteLanguage = (() => {
+  const german = {
+    "skip": "Zum Inhalt springen",
+    "home-title": "Larkline Estates | Immobilien in Bad Ragaz",
+    "properties": "Immobilien",
+    "about": "Über uns",
+    "menu": "Menü",
+    "language": "Sprache",
+    "valuation": "Bewertung anfragen",
+    "hero-eyebrow": "Unabhängige Immobilienagentur in Bad Ragaz",
+    "hero-title-first": "Ihr Zuhause.",
+    "hero-title-second": "Unsere Heimat.",
+    "hero-intro": "Verkaufen Sie Ihr Zuhause mit jemandem, der Ihre Strasse kennt und Sie vom ersten Kaffee bis zum Abschluss begleitet.",
+    "about-eyebrow": "Verkaufen mit Larkline",
+    "about-title": "Eine Ansprechperson bis zum Verkauf.",
+    "about-start": "Claire Morgan hat Larkline 2017 gegründet. Heute betreut unser kleines Team ganz Bad Ragaz. Jedes Teammitglied kennt die Strassen seines Gebiets besonders gut.",
+    "about-service": "Wir übernehmen bewusst weniger Aufträge. So begleitet Sie dieselbe Person von der Bewertung über die Besichtigungen bis zum Verkauf und beantwortet unterwegs Ihre Fragen.",
+    "about-contact": "Sprechen wir über Ihr Zuhause",
+    "selling-title": "Von der Bewertung bis zur Übergabe",
+    "selling-intro": "Eine Ansprechperson in jeder Phase des Verkaufs.",
+    "selling-price": "Den Preis einschätzen",
+    "selling-price-copy": "Zeigen Sie uns Ihr Zuhause und erzählen Sie uns, was Ihnen beim Umzug wichtig ist. Wir erklären Ihnen, was den Wert beeinflusst und wie Sie den Verkauf angehen können.",
+    "selling-buyer": "Passende Käufer finden",
+    "selling-buyer-copy": "Ihre Ansprechperson organisiert Besichtigungen und beantwortet Fragen zum Zuhause und zum Quartier.",
+    "selling-steps": "Den Verkauf abschliessen",
+    "selling-steps-copy": "Besprechen Sie Angebote und nächste Schritte bis zum Vertragsabschluss mit der Person, die Ihr Zuhause kennt.",
+    "buying": "Kaufen in Bad Ragaz",
+    "listings": "Immobilien zum Kauf",
+    "listing-intro": "Entdecken Sie drei Immobilien und kontaktieren Sie direkt die zuständige Person.",
+    "tamina-meta": "Kurgebiet · Wohnung",
+    "townhouse-meta": "Fläscherstrasse · Stadthaus",
+    "townhouse-title": "Stadthaus an der Fläscherstrasse",
+    "loft-facts": "3 Schlafzimmer · 2 Bäder · 195 m²",
+    "tamina-facts": "3 Schlafzimmer · 2 Bäder · 172 m²",
+    "townhouse-facts": "4 Schlafzimmer · 4 Bäder · 297 m²",
+    "photo-note": "Die Immobilienfotos sind Beispielbilder.",
+    "around": "Rund um Bad Ragaz",
+    "around-title": "Finden Sie das Quartier, das zu Ihnen passt.",
+    "around-copy": "Ein Loft beim Kronenplatz im Dorfkern, eine Wohnung im Kurgebiet oder ein Stadthaus an der Fläscherstrasse. Sagen Sie uns, was Sie zu Fuss erreichen möchten. Wir helfen Ihnen, das passende Quartier zu finden.",
+    "around-link": "Immobilien zum Kauf ansehen",
+    "map-caption": "Bad Ragaz · Illustrierte Karte",
+    "team-title": "Ihr Team vor Ort",
+    "team-intro": "Claire Morgan leitet Larkline. Unser vierköpfiges Maklerteam betreut verschiedene Gebiete in Bad Ragaz. So sprechen Sie mit jemandem, der Ihre Strasse kennt.",
+    "daniel-area": "Dorfkern, Kirchgasse und Bahnhof",
+    "priya-area": "Kurgebiet, Blumenrain-Sand und Freudenberg",
+    "marcus-area": "Pizolstrasse, Unterrain und Weilig",
+    "sofia-area": "Fläscherstrasse, Grossfeld und St. Leonhard",
+    "portrait-note": "Die Porträts sind Beispielbilder für diesen Prototyp.",
+    "faq-title": "Bevor Sie sich zum Verkauf entscheiden",
+    "faq-value-q": "Welche Angaben braucht es für eine Bewertung?",
+    "faq-value-a": "Für den Anfang genügen Ihre Strasse oder Ihr Quartier und die Art der Immobilie. Weitere Details klären wir im persönlichen Gespräch.",
+    "faq-agent-q": "Habe ich während des Verkaufs dieselbe Ansprechperson?",
+    "faq-agent-a": "Ja. Ihre Ansprechperson begleitet Sie vom ersten Gespräch über die Besichtigungen bis zum Vertragsabschluss.",
+    "faq-rent-q": "Vermittelt Larkline auch Mietobjekte?",
+    "faq-rent-a": "Wir konzentrieren uns auf den Kauf und Verkauf von Wohnimmobilien in Bad Ragaz.",
+    "commission-eyebrow": "Provisionsrechner",
+    "commission-title": "Wie hoch ist die Provision für Ihren Verkauf?",
+    "commission-intro": "Vergleichen Sie die Larkline-Provision mit einem Satz Ihrer Wahl.",
+    "commission-price": "Voraussichtlicher Verkaufspreis",
+    "commission-rate": "Vergleichssatz",
+    "commission-hint": "Geben Sie einen Betrag in ganzen Franken bis CHF 10’000’000 und einen Satz von 0 bis 10 % mit höchstens zwei Nachkommastellen ein.",
+    "commission-other": "Provision zum Vergleichssatz",
+    "commission-larkline": "Larkline-Provision",
+    "valuation-eyebrow": "Ein erster Schritt für Eigentümer",
+    "valuation-title": "Was ist Ihr Zuhause wert?",
+    "valuation-intro": "Erzählen Sie uns kurz von Ihrer Immobilie. Wir erklären Ihnen, was ihren Wert beeinflusst und wie ein Verkauf ablaufen könnte.",
+    "full-name": "Vor- und Nachname",
+    "email": "E-Mail-Adresse",
+    "street": "Strasse oder Quartier",
+    "type": "Immobilienart",
+    "select-type": "Immobilienart wählen",
+    "apartment": "Wohnung",
+    "house": "Haus",
+    "townhouse": "Stadthaus",
+    "other": "Andere",
+    "valuation-note": "Demoformular. Verwenden Sie zum Testen Beispieldaten.",
+    "valuation-success": "Vorschau abgeschlossen. Ihre Angaben sind auf dieser Seite geblieben.",
+    "enable-js": "Aktivieren Sie JavaScript, um die Anfrage zu testen.",
+    "address": "7310 Bad Ragaz, Schweiz",
+    "footer-note": "Larkline Estates · Prototyp mit fiktiven Inseraten und Kontaktdaten",
+    "footer-nav": "Navigation im Footer",
+    "footer-pages": "Entdecken",
+    "footer-legal": "Rechtliches",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum",
+    "credits": "Bildnachweise",
+    "portraits": "Beispielporträts",
+    "back": "Zurück zu den Immobilien",
+    "contact-agent": "Kontakt aufnehmen",
+    "photo-close": "Foto schliessen",
+    "photo-previous": "Zurück",
+    "photo-next": "Weiter",
+    "details": "Details zur Immobilie",
+    "area": "Wohnfläche",
+    "beds": "Schlafzimmer",
+    "baths": "Badezimmer",
+    "explore": "Bad Ragaz entdecken",
+    "local-agent": "Ihr Kontakt vor Ort",
+    "agent-note": "Beispielporträt und fiktive Kontaktdaten.",
+    "license-unsplash": "Unsplash-Lizenz",
+    "license-pexels": "Pexels-Lizenz",
+    "credit-living": "Clay Banks, Wohnzimmer",
+    "credit-bedroom": "Clay Banks, Schlafzimmer",
+    "meta/home": "Larkline Estates ist eine unabhängige Immobilienagentur in Bad Ragaz. Kaufen oder verkaufen Sie mit einer Ansprechperson vor Ort.",
+    "meta/property": "Entdecken Sie eine Immobilie in Bad Ragaz und kontaktieren Sie direkt die zuständige Person.",
+    "home-label": "Larkline Estates Startseite",
+    "nav-label": "Hauptnavigation",
+    "breadcrumb": "Brotkrumennavigation",
+    "gallery": "Bildergalerie der Immobilie",
+    "gallery-controls": "Galerie-Steuerung",
+    "office-alt": "Das Team arbeitet an einem Tisch im Büro",
+    "loft-alt": "Beispielbild eines Wohnzimmers mit hellem Holz und Tageslicht",
+    "tamina-alt": "Beispielbild eines Wohnzimmers in dezenten Naturtönen",
+    "townhouse-alt": "Beispielbild eines Stadthauses mit cremefarbener Fassade und Schieferdach",
+    "town-alt": "Historische Gebäude mit Geschäften am Kronenplatz im Zentrum von Bad Ragaz",
+    "credits-listings": "Beispielbilder der Immobilien",
+    "credits-crop": "Für die Anzeige zugeschnitten.",
+    "meet-team-link": "Lernen Sie Claire und das Team kennen",
+    "town-guide-link": "Zum Ortsführer für Bad Ragaz",
+    "guide-meta-title": "Leben in Bad Ragaz | Larkline Estates",
+    "guide-meta-description": "Lernen Sie Bad Ragaz kennen, von der Tamina Therme und dem Pizol bis zu Dorfarchitektur, Freiluftkunst und Spazierwegen.",
+    "guide-eyebrow": "Leben in Bad Ragaz",
+    "guide-title": "In Bad Ragaz zuhause.",
+    "guide-intro": "Ein Besuch im Thermalbad unter der Woche. Ein Wintermorgen auf dem Pizol. Kunst auf dem Weg durchs Dorf. Lernen Sie die Orte kennen, die zu Ihrem Alltag gehören könnten.",
+    "guide-cover-alt": "Häuser, Bäume und Berge an der Fläscherstrasse in Bad Ragaz",
+    "guide-index-label": "Auf dieser Seite",
+    "guide-therme": "Tamina Therme",
+    "guide-therme-copy": "Die Badetradition von Bad Ragaz beginnt in der Taminaschlucht. Das Quellwasser wird von dort in die öffentliche Therme geleitet. Ein Besuch im Bad kann genauso zu Ihrer Woche gehören wie ein Spaziergang durchs Dorf.",
+    "guide-therme-alt": "Blick vom Wartenstein auf das Aussenbecken der Tamina Therme",
+    "guide-therme-cta": "Innen- und Aussenbecken ansehen",
+    "guide-pizol": "Skifahren am Pizol",
+    "guide-pizol-copy": "Die Gondel in Bad Ragaz bringt Sie nach Pardiel. Am Pizol gibt es sanfte Hänge zum Lernen und längere Abfahrten, wenn Sie etwas mehr Zeit am Berg haben. Der Wintersportbericht zeigt, welche Pisten und Anlagen offen sind.",
+    "guide-pizol-cta": "Winter am Pizol entdecken",
+    "guide-pizol-alt": "Skifahrende auf einem sonnigen, verschneiten Hang am Pizol",
+    "guide-giessenpark": "Giessenpark und Giessensee",
+    "guide-giessenpark-copy": "Folgen Sie den Wegen am Giessensee, verweilen Sie am Wasser oder gehen Sie weiter Richtung Rhein. Im Giessenpark lässt sich leicht ein freier Nachmittag verbringen. Beim Eingang liegt das öffentliche Freibad.",
+    "guide-giessenpark-cta": "Giessenpark entdecken",
+    "guide-giessenpark-alt": "Blick über den Giessensee im Giessenpark",
+    "guide-architecture": "Ragazer Dorfarchitektur",
+    "guide-architecture-alt": "Das Bahnhofsgebäude von Bad Ragaz, vom Bahnhofplatz aus gesehen",
+    "guide-architecture-copy": "Vom Bahnhofsgebäude führt die Bahnhofstrasse in Richtung Kronenplatz. Das historische Dorfbad mit Trinkhalle nahe dem Bartholoméplatz erzählt von der Geschichte des Kurorts. Häuser und Schaufenster entlang des Wegs zeigen, wie lebendig der Dorfkern geblieben ist.",
+    "guide-architecture-cta": "Zur Dorfgeschichte",
+    "guide-golf": "Golf in Bad Ragaz",
+    "guide-golf-copy": "Das Grand Resort hat einen 18-Loch-Championship-Course und einen 9-Loch-Executive-Course. Eine kürzere Runde passt auch einmal in den Arbeitstag. Für eine längere Runde bleibt am Wochenende mehr Zeit.",
+    "guide-golf-cta": "Golfplätze ansehen",
+    "guide-casino": "Casino Bad Ragaz",
+    "guide-casino-alt": "Spieler setzen Jetons auf einem Roulettetisch",
+    "guide-casino-caption": "Symbolbild: Roulette",
+    "guide-casino-copy": "Das Casino im Grand Resort bietet Erwachsenen eine Abendgestaltung nahe dem Dorfkern. Zum Angebot gehören Live-Spiele, eine Bar und Veranstaltungen. Das Programm und die Eintrittsinformationen finden Sie auf der Website des Casinos.",
+    "guide-casino-cta": "Zum Programm des Casinos",
+    "guide-art": "Bad RagARTz, freie Kunst unter freiem Himmel",
+    "guide-art-copy": "Während der Schweizerischen Triennale der Skulptur stehen Kunstwerke in Strassen, Gärten und öffentlichen Räumen von Bad Ragaz. Die Freiluftausstellung ist während jeder Ausgabe kostenlos. Sie können die Werke nach und nach auf Ihren Spaziergängen entdecken.",
+    "guide-art-cta": "Zum Programm von Bad RagARTz",
+    "guide-racing": "Rennverein Maienfeld/Bad Ragaz",
+    "guide-racing-alt": "Die Rennbahn Rossriet mit Tribüne in Maienfeld und Bergen im Hintergrund",
+    "guide-racing-copy": "Der Rennverein Maienfeld/Bad Ragaz veranstaltet seine Renntage auf dem Rossriet im benachbarten Maienfeld. Die Naturrennbahn und das Treffen im Herbst gehören zur Region. Man kommt für die Rennen oder einfach für die Atmosphäre.",
+    "guide-racing-cta": "Zum Rennverein",
+    "guide-cta-title": "Finden Sie Ihr Zuhause in Bad Ragaz.",
+    "guide-cta-copy": "Sehen Sie, welche Immobilien zum Verkauf stehen. Fragen Sie eine lokale Ansprechperson nach den Strassen, Häusern und Quartieren, die Sie interessieren.",
+    "about-meta-title": "Über Larkline Estates | Bad Ragaz",
+    "about-meta-description": "Lernen Sie Gründerin Claire Morgan und das unabhängige Team von Larkline Estates in Bad Ragaz kennen.",
+    "about-page-heading": "Für Bad Ragaz entschieden.",
+    "founder-name": "Claire Morgan, Gründerin",
+    "founder-copy": "Claire gründete Larkline 2017 in Bad Ragaz. Ihr Ziel war eine Agentur, in der jede Kundin und jeder Kunde eine feste Ansprechperson hat, die das Zuhause kennt und bis zum Abschluss an ihrer Seite bleibt.",
+    "about-team-link": "Zum Team",
+    "about-office-caption": "Im Büro von Larkline",
+    "timeline-eyebrow": "Seit 2017",
+    "timeline-heading": "Wie Larkline entstanden ist",
+    "timeline-note": "Die Meilensteine nach der Gründung sind Beispiele für diesen Prototyp.",
+    "step-2017": "Claire gründet Larkline",
+    "step-2017-copy": "Claire Morgan eröffnet in Bad Ragaz eine unabhängige Immobilienagentur. Jeder Verkauf hat eine feste Ansprechperson.",
+    "step-2018": "Die erste Schlüsselübergabe",
+    "step-2018-copy": "Bei einer frühen Übergabe bringt Claire den bisherigen Eigentümer und die neuen Eigentümer zusammen, um das Zuhause persönlich durchzugehen.",
+    "step-2020": "Besichtigungen bei Bedarf per Video",
+    "step-2020-copy": "Das Team beginnt mit Videorundgängen für Menschen, die nicht anreisen können. Sie sehen die Räume vorab und können direkt Fragen stellen.",
+    "step-2021": "Das Team deckt mehr Quartiere ab",
+    "step-2021-copy": "Die Maklerinnen und Makler betreuen unterschiedliche Teile von Bad Ragaz. So haben Kundinnen und Kunden eine Ansprechperson, die auch die Strassen rund um die Immobilie kennt.",
+    "step-2023": "Ein Rundgang durchs Quartier",
+    "step-2023-copy": "Das Team nimmt sich Zeit für einen Spaziergang mit Kaufinteressierten, die ein Gefühl für das tägliche Leben in Bad Ragaz bekommen möchten.",
+    "step-2025": "Eine Checkliste für die Übergabe",
+    "step-2025-copy": "Verkäufer und Käufer erhalten eine kurze Liste für Schlüssel, Zählerstände und andere Details, die am Umzugstag schnell untergehen.",
+    "about-cta-title": "Sprechen wir über Ihr Zuhause.",
+  };
+  const dutch = {
+    "skip": "Naar de inhoud",
+    "home-title": "Larkline Estates | Makelaar in Bad Ragaz",
+    "properties": "Woningen",
+    "about": "Over ons",
+    "menu": "Menu",
+    "language": "Taal",
+    "valuation": "Vraag een waardebepaling aan",
+    "hero-eyebrow": "Onafhankelijk makelaarskantoor in Bad Ragaz",
+    "hero-title-first": "Uw huis.",
+    "hero-title-second": "Ons dorp.",
+    "hero-intro": "Verkoop uw woning met een makelaar die uw straat kent en u begeleidt van het eerste kopje koffie tot de overdracht.",
+    "about-eyebrow": "Verkopen met Larkline",
+    "about-title": "Eén aanspreekpunt tot aan de verkoop.",
+    "about-start": "Claire Morgan richtte Larkline in 2017 op. Ons kleine team werkt in heel Bad Ragaz. Iedere makelaar kent de straten van zijn eigen buurt door en door.",
+    "about-service": "We nemen bewust minder opdrachten aan. Zo bepaalt dezelfde makelaar de waarde van uw woning, begeleidt die de bezichtigingen en blijft die uw aanspreekpunt tot de verkoop rond is.",
+    "about-contact": "Praat met ons over uw woning",
+    "selling-title": "Van waardebepaling tot overdracht",
+    "selling-intro": "Eén aanspreekpunt in elke fase van de verkoop.",
+    "selling-price": "Krijg zicht op de vraagprijs",
+    "selling-price-copy": "Laat ons uw woning zien en vertel wat voor u belangrijk is bij de verhuizing. Uw makelaar legt uit wat de waarde bepaalt en hoe u de verkoop kunt aanpakken.",
+    "selling-buyer": "Vind de juiste koper",
+    "selling-buyer-copy": "Uw makelaar begeleidt de bezichtigingen en beantwoordt vragen van kopers over de woning en de buurt.",
+    "selling-steps": "Rond de verkoop af",
+    "selling-steps-copy": "Bespreek biedingen en vervolgstappen met de makelaar die uw woning kent, tot en met de overdracht.",
+    "buying": "Kopen in Bad Ragaz",
+    "listings": "Woningen te koop",
+    "listing-intro": "Bekijk drie woningen en neem rechtstreeks contact op met de betrokken makelaar.",
+    "tamina-meta": "Kurgebiet · Appartement",
+    "townhouse-meta": "Fläscherstrasse · Stadshuis",
+    "townhouse-title": "Stadshuis aan de Fläscherstrasse",
+    "loft-facts": "3 slaapkamers · 2 badkamers · 195 m²",
+    "tamina-facts": "3 slaapkamers · 2 badkamers · 172 m²",
+    "townhouse-facts": "4 slaapkamers · 4 badkamers · 297 m²",
+    "photo-note": "De woningfoto’s dienen ter illustratie.",
+    "around": "Rondom Bad Ragaz",
+    "around-title": "Vind de buurt die bij u past.",
+    "around-copy": "Een loft bij de Kronenplatz in het dorpshart, een appartement in de kuurwijk of een stadshuis aan de Fläscherstrasse. Vertel ons wat u op loopafstand wilt hebben. Dan helpen wij u gericht zoeken.",
+    "around-link": "Bekijk woningen te koop",
+    "map-caption": "Bad Ragaz · Geïllustreerde kaart",
+    "team-title": "Ontmoet onze lokale makelaars",
+    "team-intro": "Claire Morgan leidt Larkline. Onze vier makelaars kennen elk een ander deel van Bad Ragaz. Zo spreekt u iemand die uw straat kent.",
+    "daniel-area": "Dorfkern, Kirchgasse en Bahnhof",
+    "priya-area": "Kurgebiet, Blumenrain-Sand en Freudenberg",
+    "marcus-area": "Pizolstrasse, Unterrain en Weilig",
+    "sofia-area": "Fläscherstrasse, Grossfeld en St. Leonhard",
+    "portrait-note": "De portretten dienen ter illustratie in dit prototype.",
+    "faq-title": "Voordat u besluit te verkopen",
+    "faq-value-q": "Welke gegevens zijn nodig voor een waardebepaling?",
+    "faq-value-a": "Uw straat of buurt en het soort woning zijn voldoende om te beginnen. De overige details bespreken we persoonlijk.",
+    "faq-agent-q": "Houd ik tijdens de verkoop hetzelfde aanspreekpunt?",
+    "faq-agent-a": "Ja. Dezelfde makelaar begeleidt u vanaf het eerste gesprek via de bezichtigingen tot en met de overdracht.",
+    "faq-rent-q": "Bemiddelt Larkline ook bij verhuur?",
+    "faq-rent-a": "We richten ons op de aan- en verkoop van woningen in Bad Ragaz.",
+    "commission-eyebrow": "Makelaarskosten berekenen",
+    "commission-title": "Wat kost het om uw woning te verkopen?",
+    "commission-intro": "Vergelijk de courtage bij Larkline met een percentage naar keuze.",
+    "commission-price": "Verwachte verkoopprijs",
+    "commission-rate": "Vergelijkingspercentage",
+    "commission-hint": "Vul een bedrag in hele franken in tot CHF 10’000’000 en een percentage van 0% tot 10% met maximaal twee decimalen.",
+    "commission-other": "Courtage bij het gekozen percentage",
+    "commission-larkline": "Courtage bij Larkline",
+    "valuation-eyebrow": "Een eerste stap voor woningeigenaren",
+    "valuation-title": "Wat is uw woning waard?",
+    "valuation-intro": "Vertel ons kort iets over uw woning. Een lokale makelaar legt uit wat de waarde beïnvloedt en hoe een verkoop zou kunnen verlopen.",
+    "full-name": "Voor- en achternaam",
+    "email": "E-mailadres",
+    "street": "Straat of buurt",
+    "type": "Type woning",
+    "select-type": "Kies het type woning",
+    "apartment": "Appartement",
+    "house": "Huis",
+    "townhouse": "Stadshuis",
+    "other": "Anders",
+    "valuation-note": "Demoformulier. Gebruik voorbeeldgegevens om het te proberen.",
+    "valuation-success": "De voorbeeldweergave is voltooid. Uw gegevens zijn op deze pagina gebleven.",
+    "enable-js": "Schakel JavaScript in om de aanvraag te testen.",
+    "address": "7310 Bad Ragaz, Zwitserland",
+    "footer-note": "Larkline Estates · Prototype met fictieve woningen en contactgegevens",
+    "footer-nav": "Navigatie onderaan de pagina",
+    "footer-pages": "Ontdekken",
+    "footer-legal": "Juridisch",
+    "privacy": "Privacybeleid",
+    "imprint": "Colofon",
+    "credits": "Beeldverantwoording",
+    "portraits": "Voorbeeldportretten",
+    "back": "Terug naar de woningen",
+    "contact-agent": "Neem contact op met de makelaar",
+    "photo-close": "Foto sluiten",
+    "photo-previous": "Vorige",
+    "photo-next": "Volgende",
+    "details": "Woningdetails",
+    "area": "Woonoppervlak",
+    "beds": "Slaapkamers",
+    "baths": "Badkamers",
+    "explore": "Ontdek Bad Ragaz",
+    "local-agent": "Uw plaatselijke makelaar",
+    "agent-note": "Voorbeeldportret en fictieve contactgegevens.",
+    "license-unsplash": "Unsplash-licentie",
+    "license-pexels": "Pexels-licentie",
+    "credit-living": "Clay Banks, woonkamer",
+    "credit-bedroom": "Clay Banks, slaapkamer",
+    "meta/home": "Larkline Estates is een onafhankelijk makelaarskantoor in Bad Ragaz. Koop of verkoop uw woning met een makelaar uit de buurt.",
+    "meta/property": "Bekijk een woning in Bad Ragaz en neem rechtstreeks contact op met de betrokken makelaar van Larkline Estates.",
+    "home-label": "Larkline Estates startpagina",
+    "nav-label": "Hoofdnavigatie",
+    "breadcrumb": "Broodkruimelnavigatie",
+    "gallery": "Fotogalerij van de woning",
+    "gallery-controls": "Galerijbediening",
+    "office-alt": "Het team werkt samen rond een tafel op kantoor",
+    "loft-alt": "Voorbeeldfoto van een woonkamer met warme houttinten en daglicht",
+    "tamina-alt": "Voorbeeldfoto van een woonkamer met zachte natuurtinten",
+    "townhouse-alt": "Voorbeeldfoto van een stadshuis met een crèmekleurige gevel en een leien dak",
+    "town-alt": "Historische gebouwen en winkels aan de Kronenplatz in het centrum van Bad Ragaz",
+    "credits-listings": "Voorbeeldfoto’s van woningen",
+    "credits-crop": "Bijgesneden voor weergave.",
+    "meet-team-link": "Maak kennis met Claire en haar team",
+    "town-guide-link": "Lees de gids voor Bad Ragaz",
+    "guide-meta-title": "Wonen in Bad Ragaz | Larkline Estates",
+    "guide-meta-description": "Leer Bad Ragaz kennen, van de Tamina Therme en de Pizol tot dorpsarchitectuur, kunst in de openlucht en wandelingen.",
+    "guide-eyebrow": "Wonen in Bad Ragaz",
+    "guide-title": "Maak van Bad Ragaz uw thuis.",
+    "guide-intro": "Op een doordeweekse dag naar het thermaalbad. Een winterochtend op de Pizol. Kunst onderweg door het dorp. Ontdek de plekken die deel van uw dagelijks leven kunnen worden.",
+    "guide-cover-alt": "Huizen, bomen en bergen aan de Fläscherstrasse in Bad Ragaz",
+    "guide-index-label": "Op deze pagina",
+    "guide-therme": "Tamina Therme",
+    "guide-therme-copy": "De badtraditie van Bad Ragaz begint in de Tamina-kloof. Het bronwater stroomt van daar naar de openbare thermen. Een duik kan net zo goed bij uw week horen als een wandeling door het dorp.",
+    "guide-therme-alt": "Het buitenbad van de Tamina Therme, gezien vanaf Wartenstein",
+    "guide-therme-cta": "Bekijk de binnen- en buitenbaden",
+    "guide-pizol": "Skiën op de Pizol",
+    "guide-pizol-copy": "De gondel vanuit Bad Ragaz brengt u naar Pardiel. De Pizol heeft rustige hellingen om te leren skiën en langere afdalingen voor wie wat langer op de berg blijft. Bekijk voor vertrek het wintersportbericht.",
+    "guide-pizol-cta": "Ontdek de winter op de Pizol",
+    "guide-pizol-alt": "Skiërs op een zonnige, besneeuwde helling op de Pizol",
+    "guide-giessenpark": "Giessenpark en Giessensee",
+    "guide-giessenpark-copy": "Volg de paden langs de Giessensee, neem even plaats aan het water of loop verder richting de Rijn. In het Giessenpark brengt u gemakkelijk een vrije middag door. Bij de ingang ligt het openbare buitenbad.",
+    "guide-giessenpark-cta": "Ontdek het Giessenpark",
+    "guide-giessenpark-alt": "Uitzicht over de Giessensee in het Giessenpark",
+    "guide-architecture": "Dorpsarchitectuur",
+    "guide-architecture-alt": "Het stationsgebouw van Bad Ragaz, gezien vanaf het stationsplein",
+    "guide-architecture-copy": "Volg vanaf het station de Bahnhofstrasse richting de Kronenplatz. Het historische Dorfbad met zijn Trinkhalle bij de Bartholoméplatz vertelt het verhaal van het kuuroord. De woningen en etalages onderweg laten zien hoe levendig de dorpskern is gebleven.",
+    "guide-architecture-cta": "Lees de dorpsgeschiedenis",
+    "guide-golf": "Golf in Bad Ragaz",
+    "guide-golf-copy": "Het Grand Resort heeft een 18-holes championshipbaan en een 9-holes executivebaan. Een korte ronde past soms tussen de werkzaamheden door. In het weekend is er tijd voor een langere ronde.",
+    "guide-golf-cta": "Bekijk de golfbanen",
+    "guide-casino": "Casino Bad Ragaz",
+    "guide-casino-alt": "Spelers leggen fiches op een roulettetafel",
+    "guide-casino-caption": "Sfeerbeeld: Roulette",
+    "guide-casino-copy": "Voor volwassenen biedt het casino van het Grand Resort een avond uit vlak bij het centrum, met live tafelspellen, een bar en evenementen. Het programma en de toegangsvoorwaarden staan op de website van het casino.",
+    "guide-casino-cta": "Bekijk het casinoprogramma",
+    "guide-art": "Bad RagARTz, een gratis openluchtgalerie",
+    "guide-art-copy": "Tijdens de Zwitserse beeldentriënnale verschijnen er kunstwerken in de straten, tuinen en openbare ruimtes van Bad Ragaz. Elke editie van de openluchttentoonstelling is gratis te bezoeken. Zo kunt u de kunst tijdens gewone wandelingen ontdekken.",
+    "guide-art-cta": "Bekijk het programma van Bad RagARTz",
+    "guide-racing": "Renclub Maienfeld/Bad Ragaz",
+    "guide-racing-alt": "De Rossriet-renbaan en tribune in Maienfeld met bergen op de achtergrond",
+    "guide-racing-copy": "De renclub Maienfeld/Bad Ragaz organiseert racedagen op de Rossriet-baan in het naburige Maienfeld. De natuurlijke renbaan en de samenkomst in de herfst horen bij de regio. U kunt er naartoe voor de wedstrijden of gewoon voor de sfeer.",
+    "guide-racing-cta": "Naar de renclub",
+    "guide-cta-title": "Vind uw thuis in Bad Ragaz.",
+    "guide-cta-copy": "Bekijk wat er te koop staat en vraag een lokale makelaar naar de straten, gebouwen en buurten die u aanspreken.",
+    "about-meta-title": "Over Larkline Estates | Bad Ragaz",
+    "about-meta-description": "Maak kennis met oprichter Claire Morgan en het onafhankelijke team van Larkline Estates in Bad Ragaz.",
+    "about-page-heading": "Bewust lokaal.",
+    "founder-name": "Claire Morgan, oprichter",
+    "founder-copy": "Claire richtte Larkline in 2017 op in Bad Ragaz. Ze wilde een kantoor waar iedere klant een vast aanspreekpunt heeft dat de woning kent en tot aan de overdracht betrokken blijft.",
+    "about-team-link": "Maak kennis met het team",
+    "about-office-caption": "Op het kantoor van Larkline",
+    "timeline-eyebrow": "Sinds 2017",
+    "timeline-heading": "Hoe Larkline vorm kreeg",
+    "timeline-note": "De mijlpalen na de oprichting dienen als voorbeelden voor dit prototype.",
+    "step-2017": "Claire begint met Larkline",
+    "step-2017-copy": "Claire Morgan begint in Bad Ragaz een onafhankelijk makelaarskantoor, met één vast aanspreekpunt per verkoop.",
+    "step-2018": "De eerste sleutels wisselen van eigenaar",
+    "step-2018-copy": "Bij een van de eerste overdrachten brengt Claire de vorige en nieuwe eigenaren samen om de woning persoonlijk door te lopen.",
+    "step-2020": "Bezichtigingen kunnen ook online",
+    "step-2020-copy": "Het team begint met videorondleidingen voor mensen die niet kunnen reizen. Zo kunnen ze de kamers vooraf zien en meteen vragen stellen.",
+    "step-2021": "Het team verdeelt de buurten",
+    "step-2021-copy": "De makelaars nemen elk een ander deel van Bad Ragaz voor hun rekening. Klanten krijgen zo een aanspreekpunt dat ook de straten rond de woning kent.",
+    "step-2023": "Een buurtwandeling bij de bezichtiging",
+    "step-2023-copy": "De makelaars maken tijd voor een wandeling met kopers die willen ervaren hoe het dagelijkse leven in Bad Ragaz voelt.",
+    "step-2025": "Een checklist voor de overdracht",
+    "step-2025-copy": "Verkopers en kopers krijgen een korte lijst voor sleutels, meterstanden en andere zaken die op een verhuisdag gemakkelijk worden vergeten.",
+    "about-cta-title": "Laten we het over uw woning hebben.",
+  };
+  const locales = { en: 'en', de: 'de-CH', nl: 'nl-NL' };
+  const translations = { de: german, nl: dutch };
+  const storageKey = 'larkline-language';
+  const allowed = (value) => Object.hasOwn(locales, value) ? value : null;
+  const pageUrl = new URL(location.href);
+  function readPreference() {
+    try {
+      return allowed(localStorage.getItem(storageKey));
+    } catch {
+      return null;
+    }
+  }
+
+  const browserLanguages = navigator.languages?.length ? navigator.languages : [navigator.language];
+  const detected = browserLanguages.map((tag) => allowed(tag?.toLowerCase().split('-')[0])).find(Boolean);
+  let preference = allowed(pageUrl.searchParams.get('lang')) || readPreference();
+  let active = preference || detected || 'en';
+
+  const textEntries = [...document.querySelectorAll('[data-i18n]')].map((node) => (
+    { node, key: node.dataset.i18n, original: node.textContent }
+  ));
+  const attributes = ['aria-label', 'alt', 'content'];
+  const attrEntries = attributes.flatMap((attr) => (
+    [...document.querySelectorAll('[data-i18n-' + attr + ']')].map((node) => (
+      { node, attr, key: node.getAttribute('data-i18n-' + attr), original: node.getAttribute(attr) }
+    ))
+  ));
+  const pageLinks = [...document.querySelectorAll('a[href^="index.html"], a[href^="property.html"], a[href^="bad-ragaz.html"], a[href^="about.html"]')]
+    .map((node) => ({ node, raw: node.getAttribute('href') }));
+  const selectors = document.querySelectorAll('[data-language-select]');
+
+  function text(english, deutsch, nederlands) {
+    return { en: english, de: deutsch, nl: nederlands }[active] ?? english;
+  }
+
+  function render() {
+    document.documentElement.lang = locales[active];
+
+    const catalog = translations[active];
+    for (const { node, key, original } of textEntries) node.textContent = catalog?.[key] ?? original;
+    for (const { node, attr, key, original } of attrEntries) node.setAttribute(attr, catalog?.[key] ?? original);
+
+    for (const { node, raw } of pageLinks) {
+      const [pathAndQuery, hash] = raw.split('#');
+      const [path, query] = pathAndQuery.split('?');
+      const params = new URLSearchParams(query);
+      if (preference) params.set('lang', preference);
+      node.setAttribute('href', path + (params.size ? '?' + params : '') + (hash ? '#' + hash : ''));
+    }
+
+    for (const selector of selectors) {
+      selector.value = active;
+      selector.closest('label').hidden = false;
+    }
+    document.dispatchEvent(new Event('languagechange'));
+  }
+
+  for (const selector of selectors) {
+    selector.addEventListener('change', () => {
+      preference = allowed(selector.value);
+      if (!preference) return;
+      active = preference;
+      try {
+        localStorage.setItem(storageKey, preference);
+      } catch {
+        // The URL also retains the choice in local-file and private browsing sessions.
+      }
+      const url = new URL(location.href);
+      url.searchParams.set('lang', preference);
+      try {
+        history.replaceState(history.state, '', url);
+      } catch {
+        location.replace(url);
+        return;
+      }
+      render();
+    });
+  }
+
+  render();
+  return { text };
+})();
+
